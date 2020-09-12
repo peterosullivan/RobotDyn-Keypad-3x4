@@ -52,9 +52,9 @@ int get_button(){
   else if (value >= BUTTON_7)  return BUTTON_KEY7;
   else if (value >= BUTTON_8)  return BUTTON_KEY8;
   else if (value >= BUTTON_9)  return BUTTON_KEY9;
-  else if (value >= BUTTON_10) return  BUTTON_KEY10;
-  else if (value >= BUTTON_11) return  BUTTON_KEY11;
-  else if (value >= BUTTON_12) return  BUTTON_KEY12;
+  else if (value >= BUTTON_10) return BUTTON_KEY10;
+  else if (value >= BUTTON_11) return BUTTON_KEY11;
+  else if (value >= BUTTON_12) return BUTTON_KEY12;
   else return 0;
 }
 
@@ -74,17 +74,15 @@ void setup(){
 }
 
 void loop(){
-  // is any button pressed?
   int key = get_button();
+
   if (key > 0){
-    
-    //Serial.println(analogRead(KEYPAD_ANALOG_PIN));
-    //Serial.print(key);
+    //Serial.println(key);
 
     Keyboard.write(key);
     //Keyboard.press(key);
     //Keyboard.release(key);
 
-    delay(100);
+    delay(200);
   }
 }
