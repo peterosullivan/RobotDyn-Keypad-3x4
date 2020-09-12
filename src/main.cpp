@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-#define KEYPAD_ANALOG_PIN A0
+#define KEYPAD_ANALOG_PIN A3
 
 //Gytis_Orz sketch from Hackster.io more info https://www.hackster.io/Gytis_Orz/macro-keypad-02cb43
 // Wiring:
@@ -9,7 +9,7 @@
 // OUT -> A0 (Analog 0)
 #include <Keyboard.h>
 
-#define BUTTON_KEY1 KEY_F1 //KEY_F13
+#define BUTTON_KEY1 KEY_F13
 #define BUTTON_KEY2 KEY_F14
 #define BUTTON_KEY3 KEY_F15
 #define BUTTON_KEY4 KEY_F16
